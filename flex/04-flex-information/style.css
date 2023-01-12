@@ -10,8 +10,30 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  text-align: center;
+  margin-bottom: 32px;
 }
 
+.berries {
+  display: flex;
+  justify-content: space-evenly;
+  outline: 2px;
+  gap: 52px;
+
+
+}
+
+.berry-1, .berry-2, .berry-3, .berry-4 {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  text-align: center;
+}
 /* do not edit this footer */
 .footer {
   position: fixed;

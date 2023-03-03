@@ -3,9 +3,16 @@
   padding: 0;
 }
 
+.photo, .side-content {
+  outline: 2px;
+  outline-color: red;
+  outline-style: solid;
+}
+
 .container {
   text-align: center;
   display: grid;
+  gap: 4px;
 }
 
 .container div {
@@ -19,16 +26,35 @@
 .header {
   background-color: #393f4d;
   grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.menu {
+  align-self: center;
+}
+
+.menu ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .menu ul,
 .menu li {
   font-size: 16px;
+  list-style-type: none;
 }
 
 .sidebar {
   background-color: #FF7755;
   grid-row: 2 / 4;
+  display: grid;
+  gap: 50px;
+}
+
+.photo, .side-content {
+  display: grid;
+  align-items: center;
 }
 
 .sidebar .photo {
